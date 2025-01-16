@@ -37,6 +37,7 @@ export function Header() {
             <div className="flex space-x-6">
               <Link to="/" className="text-gray-600 hover:text-blue-600">Accueil</Link>
               <Link to="/services" className="text-gray-600 hover:text-blue-600">Services</Link>
+              <Link to="/blog" className="text-gray-600 hover:text-blue-600">Blog</Link>
               <Link to="/testimonials" className="text-gray-600 hover:text-blue-600">Témoignages</Link>
               <Link to="/faq" className="text-gray-600 hover:text-blue-600">FAQ</Link>
               <Link to="/contact" className="text-gray-600 hover:text-blue-600">Contact</Link>

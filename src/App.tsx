@@ -8,8 +8,10 @@ import { Services } from './pages/Services';
 import { Testimonials } from './pages/Testimonials';
 import { FAQ } from './pages/FAQ';
 import { Contact } from './pages/Contact';
+import { Blog } from './pages/Blog';
+import { BlogPost } from './pages/BlogPost';
 
-function App() {
+export default function App() {
   return (
     <HelmetProvider>
       <Router>
@@ -21,6 +23,8 @@ function App() {
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<Home />} />
           </Routes>
           <Footer />
@@ -29,5 +33,3 @@ function App() {
     </HelmetProvider>
   );
 }
-
-export default App;
